@@ -36,7 +36,7 @@ const SimulationPage = () => {
     setLoading(true);
     setError('');
     try {
-      const response = await api.get(`/countries/${countryId}/criteria`);
+      const response = await api.get(`/criteria/countries/${countryId}/criteria`);
       const criteriaList = response.data.data.criteria || [];
       setCriteria(criteriaList);
       setResponses({});

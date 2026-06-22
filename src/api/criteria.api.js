@@ -2,8 +2,8 @@
 import api from './axios.config';
 
 export const criteriaApi = {
-  getByCountry: (countryId) => api.get(`/countries/${countryId}/criteria`),
-  getById: (id) => api.get(`/criteria/${id}`),
+  getByCountry: (countryId) => api.get(`/criteria/countries/${countryId}/criteria`),
+  getById: (id) => api.get(`/criteria/criteria/${id}`),
   // Admin
   create: (data) => api.post('/admin/criteria', data),
   update: (id, data) => api.put(`/admin/criteria/${id}`, data),
